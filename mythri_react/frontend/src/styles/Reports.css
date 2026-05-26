@@ -1,0 +1,153 @@
+.reports-wrapper {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.reports-title {
+  background: #e0e7ff;
+  color: #4f46e5;
+  margin: -30px -30px 20px -30px;
+  padding: 16px 30px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-radius: 12px 12px 0 0;
+}
+
+.no-reports {
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+  font-size: 1rem;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.reports-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.reports-table thead {
+  background: #f3f4f6;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.reports-table th {
+  padding: 14px 12px;
+  text-align: left;
+  font-weight: 700;
+  color: #374151;
+  white-space: nowrap;
+  background: #f3f4f6;
+}
+
+.reports-table tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+  transition: background-color 200ms ease;
+}
+
+.reports-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+.reports-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.reports-table td {
+  padding: 12px;
+  color: #1f2937;
+  word-break: break-word;
+}
+
+.reports-table td:first-child {
+  text-align: center;
+  font-weight: 600;
+  background: #f9fafb;
+}
+
+.remarks-cell {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.btn-delete {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 200ms ease;
+  white-space: nowrap;
+}
+
+.btn-delete:hover {
+  background: #dc2626;
+}
+
+.btn-delete:active {
+  background: #b91c1c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .reports-wrapper {
+    padding: 20px;
+  }
+
+  .reports-title {
+    margin: -20px -20px 16px -20px;
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+
+  .reports-table {
+    font-size: 0.8rem;
+  }
+
+  .reports-table th,
+  .reports-table td {
+    padding: 8px 6px;
+  }
+
+  .btn-delete {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+  }
+
+  .remarks-cell {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .table-wrapper {
+    font-size: 0.75rem;
+  }
+
+  .reports-table th,
+  .reports-table td {
+    padding: 6px 4px;
+  }
+
+  .btn-delete {
+    padding: 3px 6px;
+    font-size: 0.7rem;
+  }
+}
